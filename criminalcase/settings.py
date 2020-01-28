@@ -153,3 +153,14 @@ if ENVIRONMENT == 'production':
     SECURE_REDIRECT_EXEMPT = []
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:4200",
+    'https://an-py.herokuapp.com'
+]
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+import django_heroku
+django_heroku.settings(locals())

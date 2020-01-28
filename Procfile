@@ -1,1 +1,1 @@
-web: gunicorn criminalcase.wsgi --log-file -
+web: gunicorn criminalcase.wsgi
