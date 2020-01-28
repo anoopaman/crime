@@ -19,7 +19,8 @@ class Profile(models.Model):
         return self.user
 
     class Meta:
-        db_table = "user_profile"
+        pass
+        # db_table = "user_profile"
 
 
 # Create your models here.
@@ -36,6 +37,7 @@ class Roles(TimeStampedUUIDModel):
         return self.role 
 
     class Meta:
-        db_table = "user_roles"
+        pass
+        # db_table = "user_roles"
         verbose_name = ('Roles')
         verbose_name_plural = ('Roles')
